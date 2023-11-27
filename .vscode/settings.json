@@ -1,0 +1,15 @@
+{
+    "angular-schematics.schematicsDefaultOptions": {
+        "angular-*": {
+            "inlineStyle": true,
+            "externalTemplate": true
+        },
+        "angular-component": {
+            "skipPathSubfolder": true
+        },
+        "angular-page": {
+            "skipPathSubfolder": true
+        }
+    },
+    "editor.inlineSuggest.showToolbar": "onHover"
+}
