@@ -4,6 +4,7 @@ import { AboutComponent } from './pages/about/about-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 
@@ -11,7 +12,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     AboutComponent,
     HomePageComponent,
-    SidebarComponent  
+    SidebarComponent,
+    ContactComponent  
   ],
   exports: [
     AboutComponent,
