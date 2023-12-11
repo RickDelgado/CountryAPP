@@ -5,6 +5,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { ContactComponent } from './pages/contact/contact.component';
+import { SearchBoxComponent } from './components/search-box/search-box.component';
 
 
 
@@ -13,12 +14,14 @@ import { ContactComponent } from './pages/contact/contact.component';
     AboutComponent,
     HomePageComponent,
     SidebarComponent,
-    ContactComponent  
+    ContactComponent,
+    SearchBoxComponent  
   ],
   exports: [
     AboutComponent,
     HomePageComponent,
-    SidebarComponent
+    SidebarComponent,
+    SearchBoxComponent
   ],
   imports: [
     CommonModule,
