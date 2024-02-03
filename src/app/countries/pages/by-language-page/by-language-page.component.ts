@@ -3,23 +3,22 @@ import { Country } from '../../interfaces/countries';
 import { CountriesService } from '../../services/countries.service';
 
 @Component({
-  selector: 'app-by-region-page',
-  templateUrl: './by-region-page.component.html',
+  selector: 'app-by-language-page',
+  templateUrl: './by-language-page.component.html',
   styles: [
   ]
 })
-export class ByRegionPageComponent  {
+export class ByLanguageComponent  {
 
-  placeholder:string = 'Buscar por Region';
+  placeholder:string = 'Buscar por Lenguaje';
   public countries:Country[] = [];
     
   constructor(private countriesService:CountriesService) { }
   
-  searchByRegion(term:string){
-    this.countriesService.searchRegion(term).subscribe(
+  searchByLanguage(term:string){
+    this.countriesService.searchLanguage(term).subscribe(
       countries =>{
         this.countries = countries;
       })
   }
-
 }

@@ -4,6 +4,7 @@ import { ByCapitalPageComponent } from './pages/by-capital-page/by-capital-page.
 import { ByRegionPageComponent } from './pages/by-region-page/by-region-page.component';
 import { ByCountryPageComponent } from './pages/by-country-page/by-country-page.component';
 import { CountryPageComponent } from './pages/country-page/country-page.component';
+import { ByLanguageComponent } from './pages/by-language-page/by-language-page.component';
 
 const routes: Route[] = [
     {
@@ -18,6 +19,11 @@ const routes: Route[] = [
     {
         path: 'by-region',
         component: ByRegionPageComponent
+
+    },
+    {
+        path: 'by-language',
+        component: ByLanguageComponent
 
     },
     {
