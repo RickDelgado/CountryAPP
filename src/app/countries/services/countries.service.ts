@@ -12,6 +12,19 @@ export class CountriesService {
 
     constructor(private http: HttpClient) { }
 
+    searchCountryByaplhaCode(code: string):Observable<Country | null> {
+        const url = `${ this.apiUrl }/alpha/${code}`;
+        return this.http.get<Country[]>(url)
+        .pipe(
+            map( countries => countries.length > 0 ? countries[0] : null),
+            catchError( error => {
+                console.log('error en el servicio', error);
+                return of(null);
+            })
+        );
+    }
+
+
     searchCapital(term: string):Observable<Country[]> {
         const url = `${ this.apiUrl }/capital/${term}`;
         return this.http.get<Country[]>(url).pipe(
